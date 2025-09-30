@@ -42,8 +42,8 @@
 
 # print(b)
 
-# # List comprehension example 
-# # "for iterable x in list a, if x is less than 13 then return x if x does not equal 3, else if x equals 3 then return 4"
+# List comprehension example 
+# "for iterable x in list a, if x is less than 13 then return x if x does not equal 3, else if x equals 3 then return 4"
 # b = [ x if x != 3 else 4 for x in a if x < 13]
 
 # print(b)
@@ -118,9 +118,11 @@
 #     "scissors"  : "3"
 # }
 
+# win conditions
 # PlayerOneWins = ["13","21","32"]
 # PlayerTwoWins = ["12","23","31"]
 
+# process user input into integer win/lose code 
 # def ProcessInputs(input1, input2):
 #     first_num = gamedict[input1]
 #     second_num = gamedict[input2]
@@ -191,22 +193,15 @@
 
 # Problem 10 answers 
 
-import random 
-
-listing = []
+# import random 
 
 # make list numbers ranging from 0 to 100, with 1 to 100 elements in the list, do it twice 
-a = sorted(random.sample(range(100), random.randint(1,100)))
-b = sorted(random.sample(range(100), random.randint(1,100)))
+# a = sorted(random.sample(range(100), random.randint(1,100)))
+# b = sorted(random.sample(range(100), random.randint(1,100)))
 
 # iterate through list a, if element in list b return element in this newlist
-newlist = [x for x in a if x in b ]
+# newlist = [x for x in a if x in b ]
 
-# for loop for removing duplicates
-for x in newlist: 
-    if x not in listing:
-        listing.append(x)
-print((listing))
-
-lists = list(set(newlist))
-print(sorted(lists))
+# removing duplicates using set, then converting back to list and sorting it
+# lists = list(set(newlist))
+# print(sorted(lists))
