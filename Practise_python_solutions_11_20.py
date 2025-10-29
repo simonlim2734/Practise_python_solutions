@@ -119,7 +119,35 @@
 # Problem 17 Solutions
 # 
 # Problem 18 Solutions
-# 
+
+# import random
+
+# print("Welcome to the Cows and Bulls Game!")
+
+# random_number = str(random.randint(1000,9999)) 
+
+# guess_counter = 0
+
+# while True:
+#     user_number = input("Enter a 4 digit number: ")
+#     cows = 0
+#     bulls = 0 
+#     user_list = list(user_number)
+#     random_list = list(random_number)
+#     for x in range(0,4): 
+#         if user_list[x] == random_list[x]:
+#             cows += 1
+#             continue
+#         elif user_list[x] in random_list:
+#             bulls += 1
+#     print("Number of bulls is " + str(bulls))
+#     print("Number of cows is " + str(cows))
+#     guess_counter += 1
+#     if user_number == random_number:
+#         print("Correct guess!")
+#         print("Number of guesses it took : " + str(guess_counter))
+#         break
+
 # Problem 19 Solutions
 
 #Problem 20 Solutions (Still need to do binary searches)
